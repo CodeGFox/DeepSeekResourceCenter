@@ -1,18 +1,141 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>夸克资源中心-测试</title>
+    <meta charset="UTF-8">
+    <title>DeepSeek 资源分享</title>
     <style>
-        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: Arial; }
-        .link-box { padding: 15px; margin: 10px 0; background: #f5f5f5; border-radius: 5px; }
+        body {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .sub_title {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .point_title {
+            width: 90%;
+            background-color: rgb(218, 218, 218);
+        }
+
+        .title-block {
+            display: inline-block;
+            position: relative;
+            background: #54bce9;
+            color: white;
+            text-align: center;
+            padding: 0px 25px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 5px 5px 5px 0px;
+            letter-spacing: 2px;
+        }
+
+        .title-block .triangle {
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border: 5px solid transparent;
+            border-top: 5px solid #7cadbe;
+            border-right: 5px solid #7cadbe;
+            left: 0px;
+            bottom: -10px;
+        }
+
+        .link-box {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+
+        .link {
+            color: black;
+            text-underline-offset: 3px
+        }
+
+        .li_content {
+            margin-bottom: 10px;
+        }
+
+        .li_label {
+            font-weight: 600;
+        }
+
+        .contentContainer {
+            margin-bottom: 10vh;
+        }
+
+        .box {
+            background-color: rgb(255, 255, 255);
+            max-width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            border-radius: 10px;
+            padding: 15px;
+        }
     </style>
 </head>
+
 <body>
-    <h1>资源下载</h1>
-    <div class="link-box">
-        <h3>文档合集</h3>
-        <a href="https://pan.quark.cn/xxxx">点击下载</a>
+    <div class="box">
+        <div class="title">DeepSeek 资源分享</div>
+        <div class="sub_title">无偿分享，希望大家能更好地了解 DeepSeek </div>
+        <div class="title-block">
+            <div>DeepSeek 入门</div>
+            <div class="triangle"></div>
+        </div>
+        <div style="margin-top: 20px;" class="contentContainer">
+            <div style="margin-left: 20px">
+                DeepSeek AI是由中国人工智能公司深度求索（DeepSeek
+                Inc.）研发的通用智能（AGI）技术体系，旨在通过多模态大模型技术推动人工智能在复杂场景中的应用。该模型基于先进的深度学习架构，具备自然语言处理、跨模态理解、逻辑推理等能力，并专注于垂直领域的高效适配与优化。
+            </div>
+        </div>
+
+        <div class="title-block">
+            <div>DeepSeek 官方</div>
+            <div class="triangle"></div>
+        </div>
+        <div class="contentContainer">
+            <ul>
+                <li class="li_content"><label class="li_label">网页版: </label><a href="https://www.deepseek.com/" class="link">访问</a></li>
+                <li class="li_content"><label class="li_label">手机端: </label><a href="https://download.deepseek.com/app/" class="link">访问</a></li>
+                <li class="li_content"><label class="li_label">API: </label><a href="https://platform.deepseek.com/" class="link">访问</a></li>
+            </ul>
+        </div>
+
+        <div class="title-block">
+            <div>DeepSeek 入门</div>
+            <div class="triangle"></div>
+        </div>
+        <div class="contentContainer">
+            <div></div>
+        </div>
+
+        <div class="title-block">
+            <div>DeepSeek 部署</div>
+            <div class="triangle"></div>
+        </div>
+        <div class="contentContainer">
+            <div></div>
+        </div>
     </div>
-    <!-- 更多链接区块 -->
 </body>
+
 </html>
